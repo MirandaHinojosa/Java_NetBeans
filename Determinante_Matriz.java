@@ -28,7 +28,7 @@ public class Determinante_Matriz {
     public static void main (String[] arg){
         Scanner leer = new Scanner(System.in);
         int matriz[][]= new int [3][3];
-        int det,det1;
+        int diaDe,diaIz;
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
                 System.out.println("Ingrese valor en la posicion Matriz["+ i+"]["+j+"]");
@@ -42,11 +42,11 @@ public class Determinante_Matriz {
             }
             System.out.println("");
         }
-        det= (matriz[0][0]*matriz[1][1]*matriz[2][2])+(matriz[0][1]*matriz[1][2]*matriz[2][0])+(matriz[0][2]*matriz[1][0]*matriz[2][1]);
-        det1=((matriz[0][0]*matriz[1][2]*matriz[2][1])+(matriz[0][1]*matriz[1][0]*matriz[2][2])+(matriz[0][2]*matriz[1][1]*matriz[2][0]));
+        diaDe= (matriz[0][0]*matriz[1][1]*matriz[2][2])+(matriz[0][1]*matriz[1][2]*matriz[2][0])+(matriz[0][2]*matriz[1][0]*matriz[2][1]);
+        diaIz=((matriz[0][0]*matriz[1][2]*matriz[2][1])+(matriz[0][1]*matriz[1][0]*matriz[2][2])+(matriz[0][2]*matriz[1][1]*matriz[2][0]));
         
         
-        System.out.println("El determinante es "+(det-det1));
+        System.out.println("El determinante es "+(diaDe-diaIz));
         
     }
     
