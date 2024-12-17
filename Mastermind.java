@@ -107,7 +107,7 @@ public class Mastermind {
                 
             }
             if(intentos ==0){
-                System.out.println("Perdiste! la maquina Ganó, la opcion correcta era: ");
+                System.out.println("Perdiste! la maquina Gano, la opcion correcta era: ");
                 for(int i = 0; i<4;i++){
                     System.out.print(colores[vecAleatoria[i]] +" ");
                 } 
@@ -119,7 +119,7 @@ public class Mastermind {
                     System.out.print(colores[vecJugador[i]] +" ");
                 } 
                 System.out.println("");
-                System.out.println("Opción Aleatoria de la Maquina : ");
+                System.out.println("Opcion Aleatoria de la Maquina : ");
                 for(int i = 0; i<4;i++){
                     System.out.print(colores[vecAleatoria[i]] +" ");
                 } 
